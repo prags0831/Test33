@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .bla{
+    text-align: center;
+  }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 6px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #e20d3b;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(225, 38, 38);
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+p{
+font-size: 10px;
+}
+
+</style>
+</head><header>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <body id="myPage">
+      <div class="w3-top">
+      <div class="w3-bar w3-theme-d2 w3-left-align">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+      <a class="w3-bar-item w3-button w3-coral" routerLink="/Home"><i class="fa fa-home w3-margin-right"></i>BTS HEALTH CLUB</a>
+      
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-button" title="Notifications">Services<i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+          <a routerLink="/View" class="w3-bar-item w3-button">View Appointment</a>
+          <a routerLink="/Apply"class="w3-bar-item w3-button">Apply Appointment</a>
+        </div>
+        </div>
+      <a [routerLink]="['/Query']" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Query</a>
+      <a [routerLink]="['/ContactUs']" class="w3-bar-item w3-button w3-hide-small w3-hover-white">ContactUs</a>
+      <a [routerLink]="['/Feedback']" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Feedback</a>  
+      
+      
+      </div>
+      <router-outlet></router-outlet>
+      </div>
+        </body>
+<body>
+
+<div class="about-section">
+  <h1>ABOUT Us</h1>
+  <p>WE AT BTS HEALTH CLUB PROVIDE THE UTMOST CARE WHENGETTING TRAINED WITH US. </p>
+  <p>THE TRAINERS ARE EXCEPTIONALLY WELL TRAINED. FEEL AT ATMOST EASE WHEN WITH US</p>
+  <p>YOU ARE IN GOOD HANDS!!!</p>
+</div>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="row">
+        <div class="column">
+          <img src="assets\download (8).jpg" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="assets\download (9).jpg" alt="Forest" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="assets\download (10).jpg" alt="Mountains" style="width:100%">
+        </div>
+      </div>
+      <div class="container">
+        <h2>GET PERIODIC CHECKUPS</h2>
+        <p> PERFECT UPTO DATE EQUIPMENTS</p>
+        <p>WILL ALWAYS BE AVAILABLE TO SERVE!! </p>
+        <p>ALWAYS WELCOME AT BTS HEALTH CLUB</p>
+      
+       
+      </div>
+    </div>
+  </div>
+<br>
+  <div class="column">
+    <div class="card">
+      <div class="row">
+        <div class="column">
+          <img src="assets\download (1).jpg" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="assets\download (2).jpg" alt="Forest" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="assets\images (1).jpg" alt="Mountains" style="width:100%">
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="assets\download (7).jpg" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="assets\images (2).jpg" alt="Forest" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="assets\images (3).jpg" alt="Mountains" style="width:100%">
+        </div>
+      </div>
+      <!-- <img src="assets\download (1).jpg" alt="Mike" style="width:20%">
+      <img src="assets\download (2).jpg" alt="Mike" style="width:30%">
+      <img src="assets\images (2).jpg" alt="Mike" style="width:30%"> -->
+      
+      <!-- <div class="container">
+        <h2>JEON JUNGKOOK</h2>
+        <p class="title">TRAINER</p>
+        <p>IS KNOWN AS THE MUSCLE BUNNY! </p>
+        <p>HAS BEEN INTO THIS FROM HIS TEENAGE YEARS!</p>
+        <p>jungkook14@example.com</p>
+        <p>CONTACT:+01-64678992282</p>
+        
+      </div> -->
+    </div>
+  </div>
+  <div class="w3-display-bottomright oo">
+  <div class="column">
+    <div class="card">
+      
+      <div class="container">
+        <div class="w3-display-bottomright oo">
+          <table class="w3-table">
+          <tr>
+          <th>Useful links</th>
+          <th>Contact</th>
+          </tr>
+          <tr>
+              <td><a [routerLink]="['/Home']" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+              <td>HYBE@healthclub.com<br>
+              </tr>
+              <tr>
+          <tr>
+          <td><a [routerLink]="['/Apply']" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Apply Appointment</a>
+          <td>HYBE,BIGHIT ENTERTAINMENT <br>
+          </tr>
+          <tr>
+          <td><a [routerLink]="['/View']" class="w3-bar-item w3-button w3-hide-small w3-hover-white">View Appointment</a>
+          <td>+91-4638763827<br>
+          </tr>    
+          <tr>
+          <td><a [routerLink]="['/Query']" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Query</a>
+          <td>Contact : +031 45678910</td>
+          </tr>
+          </table>
+          </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+<div class="w3-display-bottommiddle oo bla" >
+  <p class="footer">All Rights Reserved</p>  
+  </div>
+        
